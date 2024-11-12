@@ -1,0 +1,161 @@
+
+:root{
+    --font-inter: "Inter", sans-serif;
+    --fonte-colistoga:"Calistoga", serif;
+    --main-bg-color:#141414;
+    --second-bg-color: #1F1F1F;
+    --orange-color: #FE6A0F;
+    --container-width: 1200px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: var(--container-width);
+    max-width: 100%;
+    height: 100px;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.logo{
+    width:max-content ;
+    margin-left: 20px;
+}
+
+.logo p{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: var(--fonte-colistoga);
+}
+
+.menu{
+    flex: 1;
+    margin-left: 50px;
+}
+
+.menu nav ul,
+.menu nav li{
+    list-style: none;
+    display: flex;
+}
+
+.menu nav a{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    text-transform: capitalize;
+    font-family: var(--font-inter);
+    font-size: 18px;
+}
+
+.make_order{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.make_order a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: var(--font-inter);
+}
+
+.main-background{
+    height: calc(100vh - 100px);
+    max-height: 100%;
+    width: 100vw;
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: var(--container-width);
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.main-background--header{
+    display: flex;
+    justify-content: center;
+}
+
+.main-background--header---text{
+    flex: 1;
+}
+
+.main-background--header---text h1{
+    font-size: 72px;
+    text-transform: capitalize;
+    font-family: var(--fonte-colistoga);
+    margin-bottom: 30px;
+}
+
+.main-background--header---text p{
+    font-size: 20px;
+    font-family: var(--font-inter);
+    margin-bottom: 30px;
+}
+
+.main-background--header---text p::first-letter{
+    text-transform: capitalize;
+}
+
+.main-background--header---text .button a{
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    padding: 18px;
+    text-decoration: none;
+    background-color: var(--orange-color);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.main-background--header---img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.main-background--header---img img{
+    position:absolute;
+    height: 450px;
+    bottom: -10;
+}
+
+.main-backgound--search{
+    background-color: var(--second-bg-color);
+    height: 35%;
+}
+
