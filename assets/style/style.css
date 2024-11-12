@@ -4,8 +4,11 @@
     --fonte-colistoga:"Calistoga", serif;
     --main-bg-color:#141414;
     --second-bg-color: #1F1F1F;
+    --tird-bg-color:#2B2B2B;
     --orange-color: #FE6A0F;
-    --container-width: 1200px;
+    --dark-orange-color:#d65403;
+    --gray-color:#979797;
+    --container-width:1200px;
 }
 
 *{
@@ -101,7 +104,6 @@ header{
     max-width: 100%;
     margin-left: 20px;
     margin-right: 20px;
-    position: relative;
 }
 
 .main-background--header{
@@ -141,6 +143,11 @@ header{
     margin-bottom: 30px;
 }
 
+.main-background--header---text .button a:hover{
+    color: var(--second-bg-color);
+    background-color: var(--dark-orange-color);
+}
+
 .main-background--header---img{
     flex: 1;
     display: flex;
@@ -157,5 +164,78 @@ header{
 .main-backgound--search{
     background-color: var(--second-bg-color);
     height: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-backgound--search .container{
+    height: 100%;
+}
+
+.search-area{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.area-text{
+    font-size: 20px;
+    font-family: var(--font-inter);
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.area{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    background-color: var(--tird-bg-color);
+    padding: 10px;
+}
+
+.search-area span::before{
+    content: url(../imagens/searchIcon.png);
+}
+
+.search-area input{
+    background-color: var(--tird-bg-color);
+    border: 0;
+    outline: 0;
+    height: 25px;
+    width: 250px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin: 10px;
+    color: var(--gray-color);
+}
+
+.search-area input::placeholder{
+    color: var(--gray-color);
+    text-transform: capitalize;
+    font-family: var(--font-inter);
+    font-size: 18px;
+}
+
+.category{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select{
+    background-color: var(--tird-bg-color);
+    padding: 20px;
+    width: 250px;
+    color: var(--gray-color);
+    font-size: 18px;
+    
 }
 
