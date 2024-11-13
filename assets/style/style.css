@@ -1,7 +1,7 @@
 
 :root{
     --font-inter: "Inter", sans-serif;
-    --fonte-colistoga:"Calistoga", serif;
+    --font-colistoga:"Calistoga", serif;
     --main-bg-color:#141414;
     --second-bg-color: #1F1F1F;
     --tird-bg-color:#2B2B2B;
@@ -34,6 +34,9 @@ header{
     align-items: center;
 }
 
+main{
+    max-width: 100%;
+}
 .header-menu{
     display: flex;
     align-items: center;
@@ -71,6 +74,10 @@ header{
     font-size: 18px;
 }
 
+.menu nav a:hover{
+    color: #bbb;
+}
+
 .make_order{
     flex: 1;
     text-align: center;
@@ -89,6 +96,11 @@ header{
     font-family: var(--font-inter);
 }
 
+.make_order a:hover{
+    color: #bbb;
+    border: 1px solid #bbb;
+}
+
 .main-background{
     height: calc(100vh - 100px);
     max-height: 100%;
@@ -102,8 +114,6 @@ header{
     justify-content: center;
     width: var(--container-width);
     max-width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .main-background--header{
@@ -158,14 +168,16 @@ header{
 .main-background--header---img img{
     position:absolute;
     height: 450px;
-    bottom: -10;
+    bottom: -10px;
 }
 
 .main-backgound--search{
     background-color: var(--second-bg-color);
-    height: 35%;
+    height: 35vh;
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 100vw;
 }
 
 .main-backgound--search .container{
@@ -179,6 +191,7 @@ header{
     flex-direction: column;
     justify-content: center;
     position: relative;
+    margin-top: 30px;
 }
 
 .area-text{
@@ -239,3 +252,87 @@ select{
     
 }
 
+.burges-list{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vw;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.burges-list .container{
+    flex-wrap: wrap;
+}
+
+.burges-list--burges{
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#2b2b2b, #1F1F1F);
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.burges-list--burges:hover{
+    background: 0;
+    background-color: #2B2B2B;
+    cursor: pointer;
+}
+
+
+.burges--type p{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: var(--font-inter);
+}
+
+.burges--type,
+.burges--header,
+.burges--price{
+    width: 100%;
+    margin-left: 30px;
+}
+
+.burges--header p{
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: var(--fonte-colistoga);
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+.burges--price p{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: var(--font-inter);
+    color: var(--orange-color);
+}
+
+.burges--price p::before{
+    content: "R$ ";
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    background-color: var(--second-bg-color);
+    padding: 50px;
+}
+
+.footer-logo,
+.footer-creator{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-creator p{
+    color: var(--gray-color);
+}
