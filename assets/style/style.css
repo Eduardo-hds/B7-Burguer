@@ -34,6 +34,18 @@ header{
     align-items: center;
 }
 
+.nav-bars{
+    display: none;
+}
+
+.nav-bar{
+    height: 3px;
+    margin-bottom: 10px;
+    width: 50px;
+    background-color: white;
+    margin-right: 20px;
+}
+
 main{
     max-width: 100%;
 }
@@ -210,7 +222,7 @@ main{
     content: url(../imagens/searchIcon.png);
 }
 
-.search-area input{
+.area input{
     background-color: var(--tird-bg-color);
     border: 0;
     outline: 0;
@@ -220,6 +232,7 @@ main{
     font-size: 18px;
     margin: 10px;
     color: var(--gray-color);
+    text-transform: capitalize;
 }
 
 .search-area input::placeholder{
@@ -365,5 +378,108 @@ footer{
 
     .main-background--header---img img{
         bottom: -70px;
+    }
+
+    
+}
+
+@media (max-width:700px){
+
+    header{
+        justify-content: space-around;
+    }
+
+    .menu,
+    .make_order{
+        display: none;
+    }
+
+    .nav-bars{
+        display: block;
+    }
+
+    .main-background--header---text h1 {
+        font-size: 50px;
+    }
+
+    .main-background--header .container{
+        flex-direction: column;
+    }
+
+    .main-background--header---text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-background--header---img{
+        position: static;
+    }
+    
+    .main-background--header---img img{
+        position:static;
+    }
+
+    .main-backgound--search{
+        height: auto;
+    }
+    .area-text{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .category{
+        flex-direction: column;
+    }
+
+    .category .area{
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .category select{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .burges-list--burges{
+        margin: 10px 20px;
+        width: 400px;
+        max-width: 100%;
+
+    }
+}
+
+@media (max-width:470px){
+
+    footer{
+        flex-direction: column;
+    }
+
+    .footer-logo{
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width:360px){
+
+    .main-background{
+        margin: 10px 0px;
+    }
+
+    .main-background--header---text h1 {
+        font-size: 40px;
+    }
+
+    .main-background--header---text p {
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+
     }
 }
