@@ -180,7 +180,7 @@ main{
 .main-background--header---img img{
     position:absolute;
     height: 450px;
-    bottom: -10px;
+    bottom: -80px;
 }
 
 .main-backgound--search{
@@ -363,6 +363,11 @@ footer{
     }
     .container{
         margin: 0 20px;
+    }
+
+    .make_order{
+        margin-right: 20px;
+        justify-content: center;
     }
 }
 
